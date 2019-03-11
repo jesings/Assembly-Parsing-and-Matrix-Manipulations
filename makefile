@@ -1,5 +1,5 @@
 all: matrix.o draw.o edgy.o prgrid.o bresenham.o manipulations.o parser.o
-	gcc -o matrix -lm -lgcc draw.o matrix.o edgy.o prgrid.o bresenham.o manipulations.o parser.o
+	gcc -o matrix -lgcc draw.o matrix.o edgy.o prgrid.o bresenham.o manipulations.o parser.o -lm
 	./matrix
 draw.o: draw.S
 	gcc -c -g draw.S
